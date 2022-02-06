@@ -3,7 +3,7 @@
 using namespace std;
 
 double area(double, double); // Prototype
-
+void func();
 int main()
 {
     double x = 3.5, y = 7.2, res;
@@ -15,6 +15,7 @@ int main()
     << "\n and length " << setw(5) << y+1
     << "\n is " << setw(5) << res
     << endl;
+    //func();
     return 0;
 }
 // Defining the function area():
@@ -22,4 +23,10 @@ int main()
 double area( double width, double len)
 {
     return (width * len); // Returns the result.
+}
+
+void func()
+{
+    int res= 1/0;
+    cout<<res<<'\n';
 }
